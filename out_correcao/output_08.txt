@@ -1,0 +1,56 @@
+Para a equacao do tipo:
+
+Max/Min c^t x
+Ax = b
+
+c (Funcao Objetivo)
+[ -1x0 3x1 1x2 2x3 ]
+
+
+Ax (Restricoes n-1 colunas)
+[ 1.00x0 2.00x1 -2.00x2 0.00x3 ]
+[ 0.00x0 1.00x1  3.00x2 1.00x3 ]
+
+b (Restricoes coluna n)
+[  2  ]
+[  5  ]
+
+Matriz na forma padrão de igualdades
+[ -1.00 3.00 1.00 2.00 0.00 0.00  ]
+[ 1.00 2.00 -2.00 0.00 1.00 0.00 2.00 ]
+[ 0.00 1.00  3.00 1.00 0.00 1.00 5.00 ]
+
+Tableau:
+[ 0.00 0.00 1.00 -3.00 -1.00 -2.00 0.00 0.00 0.00 ]
+[ 1.00 0.00 1.00  2.00 -2.00  0.00 1.00 0.00 2.00 ]
+[ 0.00 1.00 0.00  1.00  3.00  1.00 0.00 1.00 5.00 ]
+
+Matriz Auxiliar:
+Ja existe base obvia para a matriz
+
+Simplex Dual:
+
+Fim metodo Dual
+
+Simplex Primal:
+
+pivo 1 3
+
+[  0.50 2.00  1.50 0.00  4.00 0.00  0.50 2.00 11.00 ]
+[  0.50 0.00  0.50 1.00 -1.00 0.00  0.50 0.00  1.00 ]
+[ -0.50 1.00 -0.50 0.00  4.00 1.00 -0.50 1.00  4.00 ]
+
+Fim metodo primal
+
+
+Tableau final:
+[  0.50 2.00  1.50 0.00  4.00 0.00  0.50 2.00 11.00 ]
+[  0.50 0.00  0.50 1.00 -1.00 0.00  0.50 0.00  1.00 ]
+[ -0.50 1.00 -0.50 0.00  4.00 1.00 -0.50 1.00  4.00 ]
+
+Status: otimo
+Objetivo: 11.00
+Solucao: 
+0.00 1.00 0.00 4.00 
+Dual: 
+0.50 2.00 
